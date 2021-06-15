@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTeamMgmtApp.poco
 {
-    class DevTeamPoco
+    public class DevTeamPoco
     {
         public string Developers { get; set; }
 
@@ -14,6 +14,16 @@ namespace DevTeamMgmtApp.poco
 
         public string TeamId { get; set; }
 
+        public DevTeamPoco(){}
 
+        public DevTeamPoco(string developers, string teamNames, string teamId)
+        {
+            Developers = developers;
+            TeamNames = teamNames;
+            TeamId = teamId;
+
+        }
     }
+    
+   
 }

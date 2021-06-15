@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevTeamMgmtApp.poco
 {
-    class DeveloperPoco
+    public class DeveloperPoco
     {
         public string FirstName { get; set; }
 
@@ -18,6 +18,21 @@ namespace DevTeamMgmtApp.poco
 
         public bool AccessToPluralSight { get; set; }
 
+        public DeveloperPoco() {}
+
+        public DeveloperPoco(string firstName, string lastName, string id, string devTeam, bool accessToPluralSight)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            ID = id;
+            DevTeam = devTeam;
+            AccessToPluralSight = accessToPluralSight;
+
+        }
+             
+        
+
+    }
          
     }
 }
