@@ -8,15 +8,15 @@ namespace DevTeamMgmtApp.poco
 {
     public class DevTeamPoco
     {
-        public string Developers { get; set; }
+        public List <DeveloperPoco> Developers { get; set; }
 
         public string TeamNames { get; set; }
 
         public string TeamId { get; set; }
 
-        public DevTeamPoco(){}
+        public DevTeamPoco() { }
 
-        public DevTeamPoco(string developers, string teamNames, string teamId)
+        public DevTeamPoco(List <DeveloperPoco> developers, string teamNames, string teamId)
         {
             Developers = developers;
             TeamNames = teamNames;
@@ -24,6 +24,4 @@ namespace DevTeamMgmtApp.poco
 
         }
     }
-    
-   
-}
+ }

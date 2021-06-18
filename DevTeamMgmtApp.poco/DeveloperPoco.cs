@@ -12,7 +12,7 @@ namespace DevTeamMgmtApp.poco
 
         public string LastName { get; set; }
 
-        public string ID { get; set; }
+        public string Id { get; set; }
 
         public string DevTeam { get; set; }
 
@@ -24,15 +24,14 @@ namespace DevTeamMgmtApp.poco
         {
             FirstName = firstName;
             LastName = lastName;
-            ID = id;
+            Id = id;
             DevTeam = devTeam;
             AccessToPluralSight = accessToPluralSight;
-
-        }
+            
+          }
              
         
 
     }
-         
-    }
+        
 }

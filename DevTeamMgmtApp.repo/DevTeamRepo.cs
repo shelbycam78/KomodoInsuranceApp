@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace DevTeamMgmtApp.repo
 {
-    class DevTeamRepo
+    public class DevTeamRepo
     {
+        //Create
+
+        //Read
+
+        //Update
+
+        //Delete
     }
 }
