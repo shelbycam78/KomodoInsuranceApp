@@ -8,12 +8,23 @@ namespace DevTeamMgmtApp.repo
 {
     public class DevTeamRepo
     {
-        //Create
+        private List<DevTeamPoco> _listOfDevTeams = new List<DevTeamPoco>();
 
-        //Read
+        //Create a new DevTeam
+        public void CreateDevTeam(DevTeamPoco devTeam)
+        {
+            _listOfDevTeams.Add(devTeam);
+        }
 
-        //Update
+        //Read - not required
 
-        //Delete
+        //Update or add DevTeam to List
+        public void UpdateDevTeamList(string originalDevTeamPoco, DevTeamPoco newDevTeamPoco)
+        {
+            _listOfDevTeams.Add(DevTeamRepo);
+                       
+        }       
+        
+            //Delete - not required
     }
 }

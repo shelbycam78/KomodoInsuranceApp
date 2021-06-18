@@ -18,11 +18,11 @@ namespace DevTeamMgmtApp.repo
         }
 
         //Read
-        public List<DeveloperPoco> GetDevelopersList()
+        public List<DeveloperPoco> GetDevelopersList(Id)
         {
             return _listOfDevelopers;
         }
-        //Update
+        //Update 
         public void UpdateExistingList(string originalDeveloperPoco, DeveloperPoco newDeveloperPoco, object Id)
         {
             DeveloperPoco DeveloperPoco = GetDevelopersList(Id);
@@ -54,7 +54,7 @@ namespace DevTeamMgmtApp.repo
                 }
      
             int initialcount = _listOfDevelopers.Count;
-            _listOfDevelopers.Remove(DeveloperPoco);
+        _listOfDevelopers.Remove(DeveloperPoco);
 
             if (initialCount > _listofDevelopers.Count)
 	    {
@@ -66,18 +66,18 @@ namespace DevTeamMgmtApp.repo
             }
     }
 
-        //helper method
-        private DeveloperPoco GetDeveloperById(string id)
+    //helper method
+    private DeveloperPoco GetDeveloperById(string id)
+    {
+        foreach (DeveloperPoco idNumber in _listOfDeveloper)
         {
-            foreach (DeveloperPoco idNumber in _listOfDeveloper) 
+            if (idNumber._listOfDevelopers == id)
             {
-                if (idNumber._listOfDevelopers == id)
-                {
-                    return id; 
-                }
+                return id;
             }
-            return null;
-                      
         }
+        return null;
+
+    }
 
 }
