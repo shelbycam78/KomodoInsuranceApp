@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DevTeamMgmt.app
-{
+{ 
     class Program
     {
         static void Main(string[] args)
         {
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }
