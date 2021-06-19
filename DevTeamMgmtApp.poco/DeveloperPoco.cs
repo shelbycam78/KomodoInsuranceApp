@@ -14,8 +14,6 @@ namespace DevTeamMgmtApp.poco
 
         public string Id { get; set; }
 
-        public string DevTeam { get; set; }
-
         public bool AccessToPluralSight { get; set; }
 
         public DeveloperPoco() {}
@@ -25,7 +23,6 @@ namespace DevTeamMgmtApp.poco
             FirstName = firstName;
             LastName = lastName;
             Id = id;
-            DevTeam = devTeam;
             AccessToPluralSight = accessToPluralSight;
             
           }

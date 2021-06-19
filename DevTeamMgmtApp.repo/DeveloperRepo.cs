@@ -18,22 +18,21 @@ namespace DevTeamMgmtApp.repo
         }
 
         //Read
-        public List<DeveloperPoco> GetDevelopersList(Id)
+        public List<DeveloperPoco> GetDevelopersList()
         {
             return _listOfDevelopers;
         }
         //Update 
-        public void UpdateExistingList(string originalDeveloperPoco, DeveloperPoco newDeveloperPoco, object Id)
+        public bool UpdateExistingDeveloper(string developerId, DeveloperPoco newDeveloperPoco)
         {
-            DeveloperPoco DeveloperPoco = GetDevelopersList(Id);
+            DeveloperPoco developerPoco = GetDeveloperById(developerId);
 
-            if (originalDeveloperPoco != null)
+            if (developerPoco != null)
             {
-                DeveloperPoco.Id = newDeveloperPoco.Id;
-                DeveloperPoco.FirstName = newDeveloperPoco.FirstName;
-                DeveloperPoco.LastName = newDeveloperPoco.LastName;
-                DeveloperPoco.DevTeam = newDeveloperPoco.DevTeam;
-                DeveloperPoco.AccessToPluralSight = newDeveloperPoco.AccessToPluralSight;
+                developerPoco.Id = newDeveloperPoco.Id;
+                developerPoco.FirstName = newDeveloperPoco.FirstName;
+                developerPoco.LastName = newDeveloperPoco.LastName;
+                developerPoco.AccessToPluralSight = newDeveloperPoco.AccessToPluralSight;
                 return true;
             }
             else
@@ -44,40 +43,43 @@ namespace DevTeamMgmtApp.repo
 
 
         //Delete
-        public bool RemoveDeveloperfromList(string id);
+        public bool RemoveDeveloperfromList(string id)
         {
-            DeveloperPoco id = GetDeveloperById(id);
-    
-            if (id == null)
-                {
-                    return false;
-                }
-     
-            int initialcount = _listOfDevelopers.Count;
-        _listOfDevelopers.Remove(DeveloperPoco);
+            DeveloperPoco developerPoco = GetDeveloperById(id);
 
-            if (initialCount > _listofDevelopers.Count)
-	    {
-            return true;
-            }
-             else
+            if (id == null)
             {
-            return false;
+                return false;
             }
+
+            int initialCount = _listOfDevelopers.Count;
+            _listOfDevelopers.Remove(developerPoco);
+
+            if (initialCount > _listOfDevelopers.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private DeveloperPoco GetDeveloperById(string id)
+        {
+            foreach (DeveloperPoco developer in _listOfDevelopers)
+            {
+                if (developer.Id == id)
+                {
+                    return developer;
+                }
+            }
+            return null;
+
+        }
+
     }
 
     //helper method
-    private DeveloperPoco GetDeveloperById(string id)
-    {
-        foreach (DeveloperPoco idNumber in _listOfDeveloper)
-        {
-            if (idNumber._listOfDevelopers == id)
-            {
-                return id;
-            }
-        }
-        return null;
-
-    }
+    
 
 }
