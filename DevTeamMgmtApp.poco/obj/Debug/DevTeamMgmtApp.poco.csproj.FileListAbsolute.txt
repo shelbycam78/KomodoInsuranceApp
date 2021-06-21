@@ -1,0 +1,6 @@
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\bin\Debug\DevTeamMgmtApp.poco.dll
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\bin\Debug\DevTeamMgmtApp.poco.pdb
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csproj.AssemblyReference.cache
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csproj.CoreCompileInputs.cache
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.dll
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.pdb

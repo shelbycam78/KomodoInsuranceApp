@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevTeamMgmtApp.poco;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace DevTeamMgmt.app
 {
     class ProgramUI
     {
+        private object newDeveloper;
+
         public void Run()
         {
             Menu();
@@ -35,7 +38,7 @@ namespace DevTeamMgmt.app
                 switch (selection)
                 {
                     case "1":
-                        DisplayDevelopersById();
+                        DisplayDevelopers();
                         break;
                     case "2":
                         DisplayDevTeams();
@@ -63,21 +66,47 @@ namespace DevTeamMgmt.app
  
         }
 
-        //Creat new DevTeam
+        //Create new DevTeam
         private void CreateDevTeam()
         {
-            
-        }
+            DevTeam newDevTeam = new DevTeam();
 
-        //Read or display all Developers by Id
-        private void DisplayDevelopersById()
+            //TeamName
+            Console.WriteLine("Create a team name:");
+            newDevTeam.TeamName = Console.ReadLine();
+
+            //Team ID
+            Console.WriteLine("Create the team id:");
+            newDevTeam.TeamId = Console.ReadLine();
+
+            //List of Developers on team
+            Console.WriteLine("List team members:");
+            newDevTeam.Developers = Console.ReadLine();
+
+            //Developer Access to Pluralsight?
+            Console.WriteLine("Does team member have access to Pluralsight?");
+            bool accessToPluralSight = Console.ReadLine();
+
+            if (accessToPluralSight == "yes")
+            {
+                accessToPluralSight = true;
+            }
+            else
+            {
+                accessToPluralSight = false;
+            }
+                }
+
+        
+        //Read or display all Developers
+        private void DisplayDevelopers()
         {
-            
+            List<DeveloperPoco> listOfDevelopers = GetDevelopersList();
         }
         //Read or display all DevTeams
         private void DisplayDevTeams()
         {
-           
+            List<DevTeamPoco> listOfDevTeams = GetDevTeamsList();
         }
 
         //Update or edit a Devteam
@@ -86,8 +115,8 @@ namespace DevTeamMgmt.app
 
         }
 
-        //Delete or remove Developers - not required
-        
+        //Delete or remove Developers from DevTeam
+        private void 
 
     }
 }

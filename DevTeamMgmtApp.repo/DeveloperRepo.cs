@@ -64,6 +64,7 @@ namespace DevTeamMgmtApp.repo
                 return false;
             }
         }
+        //helper method
         private DeveloperPoco GetDeveloperById(string id)
         {
             foreach (DeveloperPoco developer in _listOfDevelopers)
@@ -79,7 +80,7 @@ namespace DevTeamMgmtApp.repo
 
     }
 
-    //helper method
+    
     
 
 }

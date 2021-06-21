@@ -43,12 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DevTeam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevTeamMgmtApp.poco\DevTeamMgmtApp.poco.csproj">
+      <Project>{5D89C627-6FAD-42B5-A66E-4438C62D6E0B}</Project>
+      <Name>DevTeamMgmtApp.poco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevTeamMgmtApp.repo\DevTeamMgmtApp.repo.csproj">
+      <Project>{05e9c00a-76a2-47f5-abef-428f6abe47bc}</Project>
+      <Name>DevTeamMgmtApp.repo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
