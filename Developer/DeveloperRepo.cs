@@ -11,27 +11,27 @@ namespace DevTeamMgmtApp.repo
     {
         private List<DeveloperPoco> _listOfDevelopers = new List<DeveloperPoco>();
 
-        //Create list of developers
+        //Create
         public void AddDeveloperToList(DeveloperPoco developer)
         {
             _listOfDevelopers.Add(developer);
         }
-        //Read list of developers
+
+        //Read
         public List<DeveloperPoco> GetDevelopersList()
         {
             return _listOfDevelopers;
         }
-        //Update list of developers
-        public bool UpdateExistingListOf(string developerId, DeveloperPoco newDeveloperPoco)
+        //Update 
+        public bool UpdateExistingDeveloper(string developerId, DeveloperPoco newDeveloperPoco)
         {
             DeveloperPoco developerPoco = GetDeveloperById(developerId);
 
             if (developerPoco != null)
             {
+                developerPoco.Id = newDeveloperPoco.Id;
                 developerPoco.FirstName = newDeveloperPoco.FirstName;
                 developerPoco.LastName = newDeveloperPoco.LastName;
-                developerPoco.Id = newDeveloperPoco.Id;
-                developerPoco.DevTeam = newDeveloperPoco.DevTeam;
                 developerPoco.AccessToPluralSight = newDeveloperPoco.AccessToPluralSight;
                 return true;
             }
@@ -40,8 +40,10 @@ namespace DevTeamMgmtApp.repo
                 return false;
             }
         }
+
+
         //Delete
-        public bool RemoveDeveloperFromList(string id)
+        public bool RemoveDeveloperfromList(string id)
         {
             DeveloperPoco developerPoco = GetDeveloperById(id);
 
@@ -75,5 +77,10 @@ namespace DevTeamMgmtApp.repo
             return null;
 
         }
+
     }
+
+    
+    
+
 }

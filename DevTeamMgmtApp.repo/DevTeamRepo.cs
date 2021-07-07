@@ -9,50 +9,90 @@ namespace DevTeamMgmtApp.repo
 {
     public class DevTeamRepo
     {
-        private List<DevTeamPoco> _listOfDevTeams = new List<DevTeamPoco>();
+        //1.  create the fake database & name it
+        private readonly List<DevTeamPoco> _devTeamRepo = new List<DevTeamPoco>();
 
-        //Create a new DevTeam
-        public void CreateDevTeam(DevTeamPoco devTeam)
-        {
-            _listOfDevTeams.Add(devTeam);
-        }
+        //2.  make int value to increase to establish TeamID
+        private int _count = 0;
 
-        //Read 
-        public List<DevTeamPoco> GetDevTeamsList()
+        //3.  CRUD - Create - add dev teams to the list
+        public bool AddTeam(DevTeamPoco devTeamPoco)
         {
-            return _listOfDevTeams;
-        }
-        //Update or add DevTeam to List
-        public bool UpdateDevTeamList(string devTeamId, DevTeamPoco newDevTeamPoco)
-        {
-            DevTeamPoco devTeam = GetDevTeamById(devTeamId);
-
-            if (devTeam != null)
-            {
-                devTeam.Developers = newDevTeamPoco.Developers;
-                devTeam.TeamNames = newDevTeamPoco.TeamNames;
-                devTeam.TeamId = newDevTeamPoco.TeamId;
-                return true;
-            }
-            else
+            if (devTeamPoco is null)
             {
                 return false;
             }
-        }
-        //Delete - not required
+            //increment _count
+            _count++;
 
-        //helper method
-        private DevTeamPoco GetDevTeamById(string devTeamId)
+            //assign _count to the teamId
+            devTeamPoco.TeamId = _count;
+
+            //add devTeam to the database
+            _devTeamRepo.Add(devTeamPoco);
+
+            //we can just return true
+            return true;
+        }
+
+        //4.  get all of devteams w/n the database and store them as a collection
+        public IEnumerable<DevTeamPoco> GetDevTeams()
         {
-            foreach (DevTeamPoco devTeam in _listOfDevTeams)
+            return _devTeamRepo;
+        }
+
+        //5.  get a single devteam
+        public DevTeamPoco GetDevTeamById(int id)
+        {
+            //loop thru teams in database
+            foreach (var devTeamPoco in _devTeamRepo)
             {
-                if (devTeam.TeamId == devTeamId)
+                //if team in database has same ID number as the ID number tat the user "passes-in"
+                if (devTeamPoco.TeamId == id)
                 {
-                    return devTeam;
+                    //return specific team if true...    
+                    return devTeamPoco;
                 }
             }
+            //else return nothing
             return null;
+        }
+        //6.  Update a team
+        public bool UpdateDevTeam(int id, DevTeamPoco newDevTeamData)
+        {
+            //get a specific team
+            DevTeamPoco devTeamPoco = GetDevTeamById(id);
 
+            if (devTeamPoco == null)
+            {
+                return false;
+            }
+
+            devTeamPoco.TeamId = id;
+            devTeamPoco.TeamName = newDevTeamData.TeamName;
+            devTeamPoco.Developers = newDevTeamData.Developers;
+
+            return true;
+        }
+        //7.  Delete Team
+
+        public bool DeleteDevTeam(int teamId)
+        {
+
+            foreach (DevTeamPoco devTeamPoco in _devTeamRepo)
+            {
+                if (devTeamPoco.TeamId == teamId)
+                {
+                    _devTeamRepo.Remove(devTeamPoco);
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
+
+
+
+
+

@@ -9,21 +9,24 @@ namespace DevTeamMgmtApp.poco
     public class DeveloperPoco
     {
         public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Id { get; set; }
-        public string DevTeam { get; set; }
-        public bool AccessToPluralSight { get; set; }
 
+        public string LastName { get; set; }
+
+        public string Id { get; set; }
+
+        public bool AccessToPluralSight { get; set; }
+        public string TeamName { get; set; }
 
         public DeveloperPoco() {}
-        public DeveloperPoco(string firstName, string lastName, string id,
-                             string devTeam, bool accessToPluralSight)
+
+        public DeveloperPoco(string firstName, string lastName, string id, string devTeam,
+                             bool accessToPluralSight, string teamName)
         {
             FirstName = firstName;
             LastName = lastName;
             Id = id;
-            DevTeam = devTeam;
-            AccessToPluralSight = accessToPluralSight;                      
+            AccessToPluralSight = accessToPluralSight;
+            TeamName = teamName;          
         }
     }  
 }

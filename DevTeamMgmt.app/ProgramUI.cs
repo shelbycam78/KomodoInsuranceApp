@@ -24,11 +24,17 @@ namespace DevTeamMgmt.app
             {
                 //options
                 Console.WriteLine("Select a menu option:\n" +
-                    "1.  Browse Developers" +
-                    "2.  Browse DevTeams" +
-                    "3.  Create a DevTeam" +
-                    "4.  Edit a DevTeam" +
-                    "5.  Exit");
+                    " 1.  Create a Developer\n" +
+                    " 2.  Browse a list of Developers\n" +
+                    " 3.  Search for developer by ID\n" +
+                    " 4.  Update a Developer\n" +
+                    " 5.  Remove a Developer\n" +
+                    "11.  Create a DevTeam\n" +
+                    "12.  Browse a list of DevTeams\n" +
+                    "13.  Browse a single DevTeam\n" +
+                    "14.  Update a DevTeam\n" +
+                    "15.  Delete a DevTeam\n" +
+                    "00.  Exit");
 
                 //selection
                 Console.ReadLine();
@@ -38,18 +44,36 @@ namespace DevTeamMgmt.app
                 switch (selection)
                 {
                     case "1":
-                        DisplayDevelopers();
+                        CreateDeveloper();
                         break;
                     case "2":
-                        DisplayDevTeams();
+                        BrowseDeveloperList();
                         break;
                     case "3":
-                        CreateDevTeam();
+                        SearchDeveloperByID();
                         break;
                     case "4":
-                        EditDevTeam();
+                        UpdateDeveloper();
                         break;
                     case "5":
+                        RemoveDeveloper();
+                        break;
+                    case "11":
+                        CreateDevTeam();
+                        break;
+                    case "12":
+                        BrowseDevTeamList();
+                        break;
+                    case "13":
+                        BrowseSingleDevTeam();
+                        break;
+                    case "14":
+                        UpdateDevTeam();
+                        break;
+                    case "15":
+                        RemoveDevTeam();
+                        break;
+                    case "00":
                         keepRunning = false;
                         break;
                     default:
@@ -60,14 +84,11 @@ namespace DevTeamMgmt.app
                 Console.WriteLine("Press any key to continue");
                 Console.ReadKey();
                 Console.Clear();
-            
             }
-
- 
         }
 
         //Create new DevTeam
-        private void CreateDevTeam()
+        private void CreateDeveloper()
         {
             DevTeam newDevTeam = new DevTeam();
 
@@ -95,28 +116,48 @@ namespace DevTeamMgmt.app
             {
                 accessToPluralSight = false;
             }
-                }
-
-        
+        }
         //Read or display all Developers
-        private void DisplayDevelopers()
+        private void BrowseDeveloperList()
         {
             List<DeveloperPoco> listOfDevelopers = GetDevelopersList();
         }
         //Read or display all DevTeams
-        private void DisplayDevTeams()
+        private void SearchDeveloperByID()
         {
             List<DevTeamPoco> listOfDevTeams = GetDevTeamsList();
         }
-
         //Update or edit a Devteam
-        private void EditDevTeam()
+        private void UpdateDeveloper()
         {
 
         }
+        private void RemoveDeveloper()
+        {
 
+        }
+        private void CreateDevTeam()
+        {
+
+        }
+        private void BrowseDevTeamList()
+        {
+
+        }
+        private void BrowseSingleDevTeam()
+        {
+
+        }
+        private void UpdateDevTeam()
+        {
+
+        }
+        private void RemoveDevTeam()
+        {
+
+        }
         //Delete or remove Developers from DevTeam
-        private void 
-
+        private void
     }
 }
+
