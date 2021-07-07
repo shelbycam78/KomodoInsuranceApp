@@ -90,31 +90,50 @@ namespace DevTeamMgmt.app
 
         private void AddDeveloper()
         {
+            Console.Clear();
+
+            List<DeveloperPoco> DevsInDataBase = _devRepo.GetDevelopers().ToList();
+
+            AskAQuestion("Please enter a First Name:");
+            string developerPoco = Console.ReadLine();
 
 
-            
+            Console.ReadKey();
         }
         private void ViewAllDevelopers()
         {
+            Console.Clear();
+
             List<DeveloperPoco> listOfDevelopers = GetDevelopersList();
+
+            Console.ReadKey();
         }
         private void ViewDeveloperByID()
         {
+            
             List<DevTeamPoco> listOfDevTeams = GetDevTeamsList();
         }
         private void UpdateDeveloper()
         {
+            Console.Clear();
 
+
+
+            Console.ReadKey();
         }
         private void DeleteDeveloper()
         {
-
-        }
-
-        private void CreateTeam(DeveloperPoco DeveloperPoco)
-        {
             Console.Clear();
 
+
+
+            Console.ReadKey();
+        }
+
+        private void CreateTeam(DeveloperPoco developerPoco)
+        {
+            Console.Clear();
+           
             List<DeveloperPoco> DevsInDatabase = _devRepo.GetDevelopers().ToList();
 
             List<DeveloperPoco> DevsToBeAddedToTeam = new List<DeveloperPoco>();
@@ -139,8 +158,8 @@ namespace DevTeamMgmt.app
                     
                                         var developer = _devRepo.GetDeveloperByID(userInputDevId);
 
-                    DevsToBeAddedToTeam.Add(DeveloperPoco);
-                    DevsInDatabase.Remove(DeveloperPoco);
+                    DevsToBeAddedToTeam.Add(developer);
+                    DevsInDatabase.Remove(developer);
                 }
                 else
                 {
@@ -159,11 +178,13 @@ namespace DevTeamMgmt.app
             {
                 Console.WriteLine("Failure.  Try again.");
             }
+
             Console.ReadKey();
         }
         private void ViewAllTeams()
         {
             Console.Clear();
+
             List<DevTeam> devTeamsInDatabase = _devTeamRepo.GetDevTeams().ToList();
 
             foreach (var team in devTeamsInDatabase)
@@ -175,8 +196,10 @@ namespace DevTeamMgmt.app
         }
         private void DisplayTeamData(DevTeam team)
         {
+            Console.Clear();
+
             Console.WriteLine($"{team.TeamID}\n" +
-                                $"{team.TeamName}");
+                                $"{team.TeamName}\n");
 
             Console.WriteLine("--------------Members------------");
 
@@ -188,6 +211,8 @@ namespace DevTeamMgmt.app
 
                 Console.WriteLine("*******************************\n");
             }
+
+            Console.ReadKey();
         }
         private void ViewSingleTeam()
         {
@@ -212,7 +237,6 @@ namespace DevTeamMgmt.app
             {
                 DisplayTeamData(devTeam);
             }
-
 
             Console.ReadKey();
         }    
@@ -295,7 +319,7 @@ namespace DevTeamMgmt.app
                 Console.WriteLine($"{team.TeamId} {team.TeamName}");
             }
 
-            AskAQuestion("Please enter Team ID:");
+            AskAQuestion("Please enter Team ID:")
             var userInputTeamID = int.Parse(Console.ReadLine());
 
             var devTeam = _devTeamRepo.GetDevTeamById(userInputTeamID);
@@ -316,13 +340,13 @@ namespace DevTeamMgmt.app
                     Console.WriteLine("Failure!");
                 }
             }
-
-
             Console.ReadKey();
         }
 
         private void SeedDevelopers()
         {
+            Console.Clear();
+
             DeveloperPoco developerA = new DeveloperPoco("Sammy", "Sosa", true);
             DeveloperPoco developerB = new DeveloperPoco("Mark", "McGwire", true);
             DeveloperPoco developerC = new DeveloperPoco("Barry", "Bonds", true);
@@ -339,10 +363,12 @@ namespace DevTeamMgmt.app
 
             _devTeamRepo.AddTeam(teamA);
             _devTeamRepo.AddTeam(teamB);
+
+            Console.ReadKey();
         }
 
         //helper methods
-        private void AskAQuestion()
+        private void AskAQuestion(string v)
         {
             Console.Clear();
 
@@ -352,10 +378,14 @@ namespace DevTeamMgmt.app
         }
         private void DisplayDeveloperDetails(DeveloperPoco developer)
         {
-
+            Console.WriteLine($"DeveloperID: {developer.ID}\n" +
+                              $"Developer Name:{developer.FullName}\n" +
+                              $"Developer Has PluralSight: {developer.HasPluralSightAccount}\n");
         }
         private void GiveMeDevelopers()
         {
+            Console.Clear();
+
             List<DeveloperPoco> developersToView = _devRepo.GetDevelopers().ToList();
 
             if (developersToView.Count == 0)
@@ -366,6 +396,7 @@ namespace DevTeamMgmt.app
             {
 
             }
+            Console.ReadKey();
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     internal class DevTeam
     {
-        public DevTeam()
+        public DevTeam(string userInputTeamName, System.Collections.Generic.List<DevTeamMgmtApp.poco.DeveloperPoco> devsToBeAddedToTeam)
         {
         }
 
