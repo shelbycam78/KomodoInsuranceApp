@@ -10,3 +10,9 @@ C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmtApp.poco\obj\Debug\Dev
 C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csproj.CoreCompileInputs.cache
 C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.dll
 C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.pdb
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.poco\bin\Debug\DevTeamMgmtApp.poco.dll
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.poco\bin\Debug\DevTeamMgmtApp.poco.pdb
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csproj.AssemblyReference.cache
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csproj.CoreCompileInputs.cache
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.dll
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.pdb

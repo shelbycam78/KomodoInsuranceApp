@@ -10,13 +10,13 @@ namespace DevTeamMgmtApp.poco
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string DevTeam { get; set; }
         public bool AccessToPluralSight { get; set; }
 
 
         public DeveloperPoco() {}
-        public DeveloperPoco(string firstName, string lastName, string id,
+        public DeveloperPoco(string firstName, string lastName, int id,
                              string devTeam, bool accessToPluralSight)
         {
             FirstName = firstName;

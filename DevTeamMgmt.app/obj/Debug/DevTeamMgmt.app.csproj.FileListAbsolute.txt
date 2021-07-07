@@ -2,3 +2,5 @@ C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\K
 C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.CoreCompileInputs.cache
 C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.AssemblyReference.cache
 C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.CoreCompileInputs.cache
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.AssemblyReference.cache
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.CoreCompileInputs.cache
