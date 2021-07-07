@@ -4,3 +4,9 @@ C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\K
 C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csproj.CoreCompileInputs.cache
 C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.dll
 C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.pdb
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmtApp.poco\bin\Debug\DevTeamMgmtApp.poco.dll
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmtApp.poco\bin\Debug\DevTeamMgmtApp.poco.pdb
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csprojAssemblyReference.cache
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.csproj.CoreCompileInputs.cache
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.dll
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmtApp.poco\obj\Debug\DevTeamMgmtApp.poco.pdb

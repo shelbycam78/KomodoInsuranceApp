@@ -1,0 +1,15 @@
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.AssemblyReference.cache
+C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.CoreCompileInputs.cache
+C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.AssemblyReference.cache
+C:\Users\shelb\Source\Repos\KomodoInsuranceApp\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.CoreCompileInputs.cache
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.AssemblyReference.cache
+C:\Users\shelb\source\repos\KomodoInsuranceApp\New folder\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.CoreCompileInputs.cache
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\bin\Debug\DevTeamMgmtApp.repo.dll
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\bin\Debug\DevTeamMgmtApp.repo.pdb
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\bin\Debug\DevTeamMgmtApp.poco.dll
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\bin\Debug\DevTeamMgmtApp.poco.pdb
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csprojAssemblyReference.cache
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.CoreCompileInputs.cache
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.csproj.CopyComplete
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.dll
+D:\DevTeam_6_18\ShelbySimpson\_DevTeamUIStruggles\DevTeamMgmtApp.repo\obj\Debug\DevTeamMgmtApp.repo.pdb

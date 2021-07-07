@@ -1,2 +1,4 @@
 C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.AssemblyReference.cache
 C:\Users\shelb\OneDrive\Desktop\ElevenFiftyProjects\Assignments\DotNetProjects\Komodo_Insurance_DevTeam_Mgmt\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.CoreCompileInputs.cache
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csprojAssemblyReference.cache
+D:\DevTeam_6_18\ShelbySimpson\DevTeamMgmt.app\obj\Debug\DevTeamMgmt.app.csproj.CoreCompileInputs.cache
